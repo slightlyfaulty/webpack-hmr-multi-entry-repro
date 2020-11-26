@@ -7,12 +7,16 @@ module.exports = {
 	entry: {
 		first: ['./src/first.js', './src/first.css'],
 		second: ['./src/second.js', './src/second.css'],
+		third: ['./src/third.js', './src/third.css'],
 	},
 
 	devServer: {
 		hot: true,
-		writeToDisk: true,
-		transportMode: 'ws',
+		liveReload: false,
+		//transportMode: 'ws',
+		dev: {
+			writeToDisk: true,
+		},
 	},
 
 	module: {
