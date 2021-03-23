@@ -13,7 +13,7 @@ module.exports = {
 	devServer: {
 		hot: true,
 		liveReload: false,
-		//transportMode: 'ws',
+		static: process.cwd(),
 		dev: {
 			writeToDisk: true,
 		},
